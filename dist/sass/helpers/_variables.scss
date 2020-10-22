@@ -1,0 +1,10 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+$maxMobile: "(max-width: 767px)";
+$maxSmall: "(max-width: 991px)";
+$minSmall: "(min-width: 768px)";
+$minMedium: "(min-width: 992px)";
+$minLarge: "(min-width: 1200px)";
+$gridnum: 12;
+// breakpoints map
+$breakpoints: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px);

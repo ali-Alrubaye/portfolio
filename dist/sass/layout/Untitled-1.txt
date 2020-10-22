@@ -1,0 +1,26 @@
+$test: (100% - 15%);
+@for $i from 1 through $gridnum{
+    .col-#{$i}{
+        flex:1 1 ((100% / ($gridnum /$i)) - 1%);
+        height: auto;
+        @extend %grid;
+    }
+} 
+
+$sociallist: facebook twitter youtube codepen instgram;
+$socialColor: blue green orange grey pink;
+$list: ((facebook, blue), (twitter, green),
+(youtube, orange), (codepen, grey),
+(instgram, pink));
+
+@each $social, $color in $list{
+    .#{$social}{
+        color: $color;
+        display: inline-block;
+        padding: .5em;
+        &:hover{
+            background-color: $color;
+            color: $color;
+        }
+    }
+}

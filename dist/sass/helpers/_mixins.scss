@@ -1,0 +1,39 @@
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-max-xs {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-max-s {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin break($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}

@@ -1,0 +1,25 @@
+.footer {
+    background-color: $primary-color;
+    color: #FFF;
+    overflow: hidden;
+    padding: 30px 0;
+    &__copyright {
+        float: left;
+    }
+    &__design {
+        float: right;
+        @include transition-ease;
+    }
+}
+
+@include media-max-xs {
+    .footer {
+        &__copyright {
+            float: none;
+        }
+        &__design {
+            float: none;
+            opacity: 0;
+        }
+    }
+}

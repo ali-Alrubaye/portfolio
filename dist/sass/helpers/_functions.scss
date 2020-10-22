@@ -1,0 +1,14 @@
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+@function get-grid-size($gridnum) {
+    @for $i from 1 through $gridnum {
+        @return (100% / ($gridnum /$i));
+    }
+}
