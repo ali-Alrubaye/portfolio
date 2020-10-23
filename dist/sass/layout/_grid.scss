@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -7,9 +9,10 @@
 
 .container {
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     position: relative;
+    top: 90px;
     @media #{$minSmall} {
         width: 750px;
     }

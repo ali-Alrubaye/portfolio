@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/homepage.css">
     <title>Contact Me</title>
 </head>
@@ -15,7 +14,6 @@
         <div class="menu-btn">
             <span class="menu-btn__burger"></span>
         </div>
-
         <nav class="nav">
             <ul class="menu-nav">
                 <li class="menu-nav__item">
@@ -42,19 +40,61 @@
         </nav>
     </div>
     <!-- End Header section -->
+    <!-- Start Contact me -->
 
 
+    <div class="contact">
+        <div class="contact__area">
+            <div class="contact__area__left">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                    <h2>Contact Us</h2>
+                    <h4>We would love to hear from you !</h4>
+                </div>
+            </div>
+            <div class="contact__area__right">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="form-group__label" for="fname">First Name:</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__input" id="fname" placeholder="Enter First Name" name="fname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="lname">Last Name:</label>
+                        <div class="form-group__input">
+                            <input type="text" class="form-group__input" id="lname" placeholder="Enter Last Name" name="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="email">Email:</label>
+                        <div class="form-group__input">
+                            <input type="email" class="form-group__input" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="comment">Comment:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-group__textarea" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <button type="submit" class="form-group--button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact me -->
     <!-- Start Footer -->
 
     <div class="footer">
-        <div class="container">
-            <span class="footer__copyright">&copy; 2020 COPYRIGHT DESIGN</span>
-            <span class="footer__design">DESIGNED To HTML & CSS</span>
-        </div>
+        <span class="footer__copyright">&copy; 2020 COPYRIGHT DESIGN</span>
+        <span class="footer__design">DESIGNED To HTML & CSS</span>
     </div>
-
     <!-- End Footer -->
-
     <script src="js/main.js"></script>
 </body>
 
